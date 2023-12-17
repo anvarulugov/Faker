@@ -1,15 +1,14 @@
 <?php
 
-namespace Faker\Provider\ru_RU;
+namespace Faker\Provider\uz_Latn_UZ;
 
 class Address extends \Faker\Provider\Address
 {
-    protected static $cityPrefix = ['город'];
+    protected static $cityPrefix = ['shahari'];
 
-    protected static $regionSuffix = ['область'];
+    protected static $regionSuffix = [''];
     protected static $streetPrefix = [
-        'пер.', 'ул.', 'пр.', 'шоссе', 'пл.', 'бульвар',
-        'въезд', 'спуск', 'проезд', 'наб.',
+        'tor.k.', 'k.', 'muy.', 'shox k',
     ];
 
     protected static $buildingNumber = ['%#'];
@@ -19,62 +18,20 @@ class Address extends \Faker\Provider\Address
      * @see https://ru.wikipedia.org/wiki/Общероссийский_классификатор_стран_мира#Список_стран_согласно_Классификатору
      */
     protected static $country = [
-        'Абхазия', 'Австралия', 'Австрия', 'Азербайджан', 'Албания', 'Алжир', 'Американское Самоа', 'Ангилья', 'Ангола', 'Андорра', 'Антарктида', 'Антигуа и Барбуда', 'Аргентина', 'Армения', 'Аруба', 'Афганистан',
-        'Багамы', 'Бангладеш', 'Барбадос', 'Бахрейн', 'Беларусь', 'Белиз', 'Бельгия', 'Бенин', 'Бермуды', 'Болгария', 'Боливия', 'Бонэйр, Синт-Эстатиус и Саба', 'Босния и Герцеговина', 'Ботсвана', 'Бразилия', 'Британская Территория в Индийском Океане', 'Британские Виргинские Острова', 'Бруней', 'Буркина-Фасо', 'Бурунди', 'Бутан',
-        'Вануату', 'Ватикан', 'Венгрия', 'Венесуэла', 'Великобритания', 'Виргинские Острова Соединённых Штатов', 'Вьетнам',
-        'Габон', 'Гаити', 'Гайана', 'Гамбия', 'Гана', 'Гваделупа', 'Гватемала', 'Гвинея', 'Гвинея-Бисау', 'Германия', 'Гернси', 'Гибралтар', 'Гондурас', 'Гонконг', 'Гренада', 'Гренландия', 'Греция', 'Грузия', 'Гуам',
-        'Дания', 'Демократическая Республика Конго', 'Джерси', 'Джибути', 'Доминика', 'Доминиканская Республика',
-        'Египет',
-        'Замбия', 'Западная Сахара', 'Зимбабве',
-        'Израиль', 'Индия', 'Индонезия', 'Иордания', 'Ирак', 'Иран', 'Ирландия', 'Исландия', 'Испания', 'Италия',
-        'Йемен',
-        'Кабо-Верде', 'Казахстан', 'Камбоджа', 'Камерун', 'Канада', 'Катар', 'Кения', 'Кипр', 'Киргизия', 'Кирибати', 'Китай', 'Кокосовые острова', 'Колумбия', 'Коморы', 'Конго', 'Корейская Народно-Демократическая Республика', 'Корея', 'Коста-Рика', 'Кот-д\'Ивуар', 'Куба', 'Кувейт', 'Кюрасао',
-        'Лаос', 'Латвия', 'Лесото', 'Либерия', 'Ливан', 'Ливия', 'Литва', 'Лихтенштейн', 'Люксембург',
-        'Маврикий', 'Мавритания', 'Мадагаскар', 'Майотта', 'Макао', 'Малави', 'Малайзия', 'Мали', 'Малые Тихоокеанские Отдаленные Острова Соединенных Штатов', 'Мальдивы', 'Мальта', 'Марокко', 'Мартиника', 'Маршалловы Острова', 'Мексика', 'Микронезия', 'Мозамбик', 'Молдова', 'Монако', 'Монголия', 'Монтсеррат', 'Мьянма',
-        'Намибия', 'Науру', 'Непал', 'Нигер', 'Нигерия', 'Нидерланды', 'Никарагуа', 'Ниуэ', 'Новая Зеландия', 'Новая Каледония', 'Норвегия',
-        'Объединенные Арабские Эмираты', 'Оман', 'Острова Кайман', 'Острова Кука', 'Острова Теркс и Кайкос', 'Остров Буве', 'Остров Мэн', 'Остров Норфолк', 'Остров Рождества', 'Остров Херд и Острова Макдональд',
-        'Пакистан', 'Палау', 'Палестина', 'Панама', 'Папуа-Новая Гвинея', 'Парагвай', 'Перу', 'Питкерн', 'Польша', 'Португалия', 'Пуэрто-Рико',
-        'Республика Македония', 'Реюньон', 'Россия', 'Руанда', 'Румыния',
-        'Самоа', 'Сан-Марино', 'Сан-Томе и Принсипи', 'Саудовская Аравия', 'Свазиленд', 'Святая Елена, Остров Вознесения, Тристан-да-кунья', 'Северные Марианские Острова', 'Сейшелы', 'Сен-Бартелеми', 'Сен-Мартен', 'Сенегал', 'Сент-Винсент и Гренадины', 'Сент-Китс и Невис', 'Сент-Люсия', 'Сент-Пьер и Микелон', 'Сербия', 'Сингапур', 'Сирийская Арабская Республика', 'Словакия', 'Словения', 'Соединенные Штаты Америки', 'Соломоновы Острова', 'Сомали', 'Судан', 'Суринам', 'Сьерра-Леоне',
-        'Таджикистан', 'Таиланд', 'Тайвань', 'Танзания', 'Тимор-лесте', 'Того', 'Токелау', 'Тонга', 'Тринидад и Тобаго', 'Тувалу', 'Тунис', 'Туркмения', 'Турция',
-        'Уганда', 'Узбекистан', 'Украина', 'Уоллис и Футуна', 'Уругвай',
-        'Фарерские острова', 'Фиджи', 'Филиппины', 'Финляндия', 'Фолклендские острова', 'Франция', 'Французская Гвиана', 'Французская Полинезия', 'Французские Южные Территории',
-        'Хорватия',
-        'Центрально-Африканская Республика',
-        'Чад', 'Черногория', 'Чехия', 'Чили',
-        'Швейцария', 'Швеция', 'Шпицберген и Ян-Майен', 'Шри-Ланка',
-        'Эквадор', 'Экваториальная Гвинея', 'Эландские Острова', 'Эль-Сальвадор', 'Эритрея', 'Эстония', 'Эфиопия',
-        'Южная Африка', 'Южная Джорджия и Южные Сандвичевы Острова', 'Южная Осетия', 'Южный Судан',
-        'Ямайка', 'Япония',
+        "Mamlakat", "Avstraliya", "Avstriya", "Albaniya", "Amerika Qoʻshma Shtatlari", "Angola", "Andorra", "Antigua va Barbuda", "Argentina", "Armaniston", "Afgʻoniston", "Bagama orollari", "Bangladesh", "Barbados", "Bahrayn", "Belorussiya", "Beliz", "Belgiya", "Benin", "Birlashgan Arab Amirliklari", "Bolgariya", "Boliviya", "Bosniya va Gertsegovina", "Botsvana", "Braziliya", "Bruney", "Burkina-Faso", "Burundi", "Butan", "Buyuk Britaniya", "Vanuatu", "Vatikan", "Vengriya", "Venesuela", "Vyetnam", "Gabon", "Gaiti", "Gayana", "Gambiya", "Gana", "Gvatemala", "Gvineya", "Gvineya-Bisau", "Germaniya", "Gonduras", "Grenada", "Gretsiya", "Gruziya", "Daniya", "Dominika", "Dominikan Respublikasi", "Jazoir", "Janubiy Afrika Respublikasi", "Janubiy Sudan", "Jibuti", "Zambiya", "Zimbabve", "Isroil", "Indoneziya", "Iordaniya", "Iroq", "Irlandiya", "Ispaniya", "Islandiya", "Italiya", "Kabo-Verde", "Kambodja", "Kamerun", "Kanada", "Keniya", "Kipr", "Kiribati", "Kolumbiya", "Komor orollari", "Kongo", "Kongo Demokratik Respublikasi", "Koreya Xalq Demokratik Respublikasi", "Koreya", "Kosta-Rika", "Kot-d'Ivuar", "Kuba", "Laos", "Latviya", "Lesoto", "Liberiya", "Livan", "Liviya", "Litva", "Lixtenshteyn", "Lyuksemburg", "Mavrikiy", "Mavritaniya", "Madagaskar", "Malavi", "Malayziya", "Mali", "Maldiv orollari", "Malta", "Markaziy Afrika Respublikasi", "Marokash", "Marshall orollari", "Meksika", "Mikroneziya Federativ Shtatlar", "Misr", "Mozambik", "Moldaviya", "Monako", "Myanma", "Namibiya", "Nauru", "Nepal", "Niger", "Nigeriya", "Niderlandiya", "Nikaragua", "Norvegiya", "Ozarbayjon", "Pokiston", "Palau", "Panama", "Papua Yangi Gvineya", "Paragvay", "Peru", "Polsha", "Portugaliya", "Rossiya", "Ruanda", "Ruminiya", "Salvador", "Samoa", "San-Marino", "San-Tome va Prinsipi", "Saudiya Arabistoni", "Seyshell orollari", "Senegal", "Sent-Vinsent va Grenadina", "Sent-Kits va Nevis", "Sent-Lyusiya", "Serbiya", "Singapur", "Suriya", "Slovakiya", "Sloveniya", "Solomon orollari", "Somali", "Sudan", "Surinam", "Syerra-Leone", "Tojikiston", "Tailand", "Tanzaniya", "Togo", "Tonga", "Trinidad va Tobago", "Tuvalu", "Tunis", "Turkmaniston", "Turkiya", "Uganda", "Ukraina", "Ummon", "Urugvay", "Fiji", "Filippin", "Finlandiya", "Fransiya", "Xitoy", "Xorvatiya", "Chad", "Chernogoriya", "Chexiya", "Chili", "Shveytsariya", "Shvetsiya", "Shri-Lanka", "Sharqiy Timor", "Shimoliy Makedoniya", "Ekvador", "Ekvatorial Gvineya", "Eritreya", "Eron", "Esvatini", "Estoniya", "Efiopiya", "Yamayka", "Yaman", "Yangi Zelandiya", "Yaponiya", "O‘zbekiston", "Qatar", "Qirgʻiziston", "Qozogʻiston", "Quvayt", "Hindiston",
     ];
 
     protected static $region = [
-        'Амурская', 'Архангельская', 'Астраханская', 'Белгородская', 'Брянская',
-        'Владимирская', 'Волгоградская', 'Вологодская', 'Воронежская', 'Ивановская',
-        'Иркутская', 'Калининградская', 'Калужская', 'Кемеровская', 'Кировская',
-        'Костромская', 'Курганская', 'Курская', 'Ленинградская', 'Липецкая',
-        'Магаданская', 'Московская', 'Мурманская', 'Нижегородская', 'Новгородская',
-        'Новосибирская', 'Омская', 'Оренбургская', 'Орловская', 'Пензенская',
-        'Псковская', 'Ростовская', 'Рязанская', 'Самарская', 'Саратовская',
-        'Сахалинская', 'Свердловская', 'Смоленская', 'Тамбовская', 'Тверская',
-        'Томская', 'Тульская', 'Тюменская', 'Ульяновская', 'Челябинская',
-        'Читинская', 'Ярославская',
+        "Andijon viloyati", "Buxoro viloyati", "Jizzax viloyati", "Qashqadaryo viloyati", "Navoiy viloyati", "Namangan viloyati", "Samarqand viloyati", "Surxondaryo viloyati", "Sirdaryo viloyati", "Toshkent viloyati", "Farg'ona viloyati", "Xorazm viloyati", "Qoraqalpog'iston Respublikasi",
     ];
 
     protected static $city = [
-        'Балашиха', 'Видное', 'Волоколамск', 'Воскресенск', 'Дмитров',
-        'Домодедово', 'Дорохово', 'Егорьевск', 'Зарайск', 'Истра',
-        'Кашира', 'Клин', 'Коломна', 'Красногорск', 'Лотошино',
-        'Луховицы', 'Люберцы', 'Можайск', 'Москва', 'Мытищи',
-        'Наро-Фоминск', 'Ногинск', 'Одинцово', 'Озёры', 'Орехово-Зуево',
-        'Павловский Посад', 'Подольск', 'Пушкино', 'Раменское', 'Сергиев Посад',
-        'Серебряные Пруды', 'Серпухов', 'Солнечногорск', 'Ступино', 'Талдом',
-        'Чехов', 'Шатура', 'Шаховская', 'Щёлково',
+        "Andijon", "Xonobod", "Buxoro", "Kogon", "Jizzax", "Qarshi", "Shahrisabz", "Navoiy", "Zarafshon", "G'ozg'on", "Namangan", "Samarqand", "Kattaqo'rg'on", "Termiz", "Toshkent", "Guliston", "Shirin", "Yangiyer", "Nurafshon", "Olmaliq", "Angren", "Bekobod", "Ohangaron", "Chirchiq", "Yangiyo'l", "Farg'ona",
     ];
 
     protected static $street = [
-        'Косиора', 'Ладыгина', 'Ленина', 'Ломоносова', 'Домодедовская', 'Гоголя', '1905 года', 'Чехова', 'Сталина',
-        'Космонавтов', 'Гагарина', 'Славы', 'Бухарестская', 'Будапештсткая', 'Балканская',
+        'Amir Temur', 'Alisher Navoiy', 'At-Termiziy', 'Al-Buxoriy', 'Usmon Nosir', 'Farobiy', 'Mustaqillik', 'Abdulla Qodiriy', 'Tesha Saydaliyev',
+        'Muhammad Yusuf', 'Paxtakor', 'Chinobod', 'Muruvvat', 'Taraqqiyot', 'Nurafshon',
     ];
 
     protected static $addressFormats = [

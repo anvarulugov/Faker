@@ -1,6 +1,6 @@
 <?php
 
-namespace Faker\Provider\ru_RU;
+namespace Faker\Provider\uz_Latn_UZ;
 
 class Payment extends \Faker\Provider\Payment
 {

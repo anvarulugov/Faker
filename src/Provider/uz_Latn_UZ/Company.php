@@ -1,6 +1,6 @@
 <?php
 
-namespace Faker\Provider\ru_RU;
+namespace Faker\Provider\uz_Latn_UZ;
 
 class Company extends \Faker\Provider\Company
 {
@@ -12,22 +12,21 @@ class Company extends \Faker\Provider\Company
     ];
 
     protected static $companyPrefixes = [
-        'ООО', 'ЗАО', 'ООО Компания', 'ОАО', 'ОАО', 'ПАО', 'МКК', 'МФО',
+        'MChJ', 'YaTT', 'OAJ', 'XK', 'YAJ', 'QK', 'shirkat',
     ];
 
     protected static $companyNameSuffixes = [
-        'Маш', 'Наладка', 'Экспедиция', 'Пром', 'Комплекс', 'Машина', 'Снос', '-М', 'Лизинг', 'Траст', 'Снаб',
-        '-H', 'Трест', 'Банк', 'Опт', 'Проф', 'Сбыт', 'Центр',
+        "Trans", "Sug'urta", "Xizmat", "Bank", "Kompleks", "Sanoat", "Lizing",
     ];
     /**
      * @note Words and parts of words that usually used in company names
      */
     protected static $companyElements = [
-        'ЖелДор', 'Гараж', 'Цемент', 'Асбоцемент', 'Строй', 'Лифт', 'Креп', 'Авто', 'Теле', 'Транс', 'Алмаз', 'Метиз',
-        'Мотор', 'Рос', 'Тяж', 'Тех', 'Сантех', 'Урал', 'Башкир', 'Тверь', 'Казань', 'Обл', 'Бух', 'Хоз', 'Электро',
-        'Текстиль', 'Восток', 'Орион', 'Юпитер', 'Финанс', 'Микро', 'Радио', 'Мобайл', 'Дизайн', 'Метал', 'Нефть',
-        'Телеком', 'Инфо', 'Сервис', 'Софт', 'IT', 'Рыб', 'Глав', 'Вектор', 'Рем', 'Гор', 'Газ', 'Монтаж', 'Мор',
-        'Реч', 'Флот', 'Cиб', 'Каз', 'Инж', 'Вод', 'Пив', 'Хмель', 'Мяс', 'Томск', 'Омск', 'Север', 'Лен',
+        "Avto", "Sement", "Kimyo", "OziqOvqat", "MevaSabzavot", "Globa", "IT", "Servis", "Ishonch", "Umid", "Mobile",
+        "Tezkor", "Uz", "Andijon", "Xonobod", "Buxoro", "Kogon", "Jizzax", "Qarshi", "Shahrisabz", "Navoiy", "Zarafshon",
+        "G'ozg'on", "Namangan", "Samarqand", "Kattaqo'rg'on", "Termiz", "Toshkent", "Guliston", "Shirin", "Yangiyer",
+        "Nurafshon", "Olmaliq", "Angren", "Bekobod", "Ohangaron", "Chirchiq", "Yangiyo'l", "Farg'ona", "Info", "Dizayn",
+        "Yengil", "Metallurgiya", "Telekom", "Havo", "Yo'l", "Temir yo'l",
     ];
 
     protected static $catchPhraseWords = [
